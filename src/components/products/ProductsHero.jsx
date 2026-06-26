@@ -1,0 +1,76 @@
+import React from 'react';
+import { Sparkles } from 'lucide-react';
+
+export default function ProductsHero() {
+  return (
+    <section 
+      style={{
+        position: 'relative',
+        padding: '8rem 0 4rem 0',
+        backgroundColor: 'var(--bg-secondary)',
+        borderBottom: '1px solid var(--border-gold)',
+        overflow: 'hidden'
+      }}
+    >
+      {/* Background radial gold glow */}
+      <div 
+        style={{
+          position: 'absolute',
+          top: '-150px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '600px',
+          height: '250px',
+          backgroundColor: 'rgba(207, 168, 100, 0.04)',
+          filter: 'blur(100px)',
+          borderRadius: '50%',
+          pointerEvents: 'none'
+        }}
+      />
+
+      <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+        <div 
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            color: 'var(--accent-gold)',
+            fontSize: '0.8rem',
+            fontWeight: '600',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            marginBottom: '1rem'
+          }}
+        >
+          <Sparkles size={14} />
+          <span>SPICES CATALOGUE</span>
+        </div>
+
+        <h1 
+          style={{
+            fontFamily: 'var(--font-serif)',
+            fontSize: '3.5rem',
+            color: 'var(--text-primary)',
+            marginBottom: '1rem',
+            fontWeight: '400'
+          }}
+        >
+          Pure Spice Collection
+        </h1>
+        
+        <p 
+          style={{
+            fontSize: '1.1rem',
+            color: 'var(--text-secondary)',
+            maxWidth: '600px',
+            margin: '0 auto',
+            lineHeight: '1.6',
+            fontWeight: '300'
+          }}
+        >
+          Sourced from India's finest harvesting regions, cold-stone milled to lock in volatile oils. Available in retail packs and customized wholesale bags.
+        </p>
+      </div>
+    </section>
+  );
+}

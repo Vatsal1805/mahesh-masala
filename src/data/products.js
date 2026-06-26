@@ -1,0 +1,93 @@
+export const products = [
+  {
+    id: 'kashmiri-chili',
+    name: 'Kashmiri Lal Mirch',
+    category: 'pure',
+    type: 'Powder',
+    image: '/spice_packaging.png',
+    tagline: 'Vibrant, slow-roasted, mild-heat crimson chili powder.',
+    description: 'Sourced from selected farms in Karnataka, our Kashmiri Chili is de-stemmed and stone-ground at low temperatures to retain its natural rich color and delicate oils. It provides a deep red hue and mild, pleasant warmth.',
+    aroma: 'Sweet, smoky, and mildly fruity.',
+    heatLevel: 'Mild (1/5)',
+    origin: 'Byadgi Region',
+    bestFor: 'Tandoori dishes, rich gravies, and marinades.'
+  },
+  {
+    id: 'sangli-turmeric',
+    name: 'Suva Haldi (Turmeric)',
+    category: 'pure',
+    type: 'Powder',
+    image: '/spice_packaging.png',
+    tagline: 'High-curcumin, sun-cured golden turmeric.',
+    description: 'Grown in the alluvial soils of Sangli, Maharashtra, this turmeric is cured using traditional methods. With a high curcumin content of over 4.5%, it offers powerful flavor and natural wellness benefits.',
+    aroma: 'Earthy, warm, woody, with a hint of ginger.',
+    heatLevel: 'None',
+    origin: 'Sangli, Maharashtra',
+    bestFor: 'Daily cooking, golden milk (haldi doodh), and lentil curries.'
+  },
+  {
+    id: 'ghati-coriander',
+    name: 'Shahi Dhania (Coriander)',
+    category: 'pure',
+    type: 'Powder / Seed',
+    image: '/spice_packaging.png',
+    tagline: 'Double-polished, citrus-toned coriander powder.',
+    description: 'Harvested during early spring, our coriander seeds are slow-roasted before grinding to unlock their volatile oils, giving a distinct citrusy and sweet flavor profile that forms the backbone of Indian stews.',
+    aroma: 'Citrus, sweet, herbaceous, and warm.',
+    heatLevel: 'None',
+    origin: 'Rajasthan Plains',
+    bestFor: 'Roasted vegetable dishes, spice bases, and sambhar.'
+  },
+  {
+    id: 'gujarat-cumin',
+    name: 'Desi Jeera (Cumin)',
+    category: 'pure',
+    type: 'Whole Seed',
+    image: '/spice_packaging.png',
+    tagline: 'Sun-dried, volatile-oil rich whole cumin seeds.',
+    description: 'Directly sourced from the arid fields of Gujarat, our Desi Jeera is thoroughly cleaned and sifted. Its rich flavor releases instantly when tempered in hot oil, providing a nutty, signature aroma.',
+    aroma: 'Sharp, aromatic, earthy, and warm.',
+    heatLevel: 'Mildly warm',
+    origin: 'Unjha, Gujarat',
+    bestFor: 'Tarka (tempering), dry-roasted spice mixes, and biryanis.'
+  },
+  {
+    id: 'shahi-garam-masala',
+    name: 'Shahi Garam Masala',
+    category: 'blended',
+    type: 'Blend',
+    image: '/spice_packaging.png',
+    tagline: 'A royal blend of 15 premium spices, hand-crafted.',
+    description: 'An heirloom family recipe combining green cardamom, black cardamom, mace, nutmeg, cinnamon, and cloves. Hand-roasted in small batches to preserve the delicate aroma that adds a finishing touch of royalty to any dish.',
+    aroma: 'Intensely fragrant, sweet, spicy, and warming.',
+    heatLevel: 'Medium (2/5)',
+    origin: 'Heirloom Recipe',
+    bestFor: 'Finishing curries, kormas, and roasted vegetables.'
+  },
+  {
+    id: 'kitchen-king',
+    name: 'Sardar Kitchen King',
+    category: 'blended',
+    type: 'Blend',
+    image: '/spice_packaging.png',
+    tagline: 'The ultimate all-purpose kitchen seasoning.',
+    description: 'Our proprietary multi-spice blend designed to elevate everyday cooking. Perfectly balanced with mild heat, savoury coriander, aromatic cardamom, and cooling fennel to bring out the best in home-cooked meals.',
+    aroma: 'Savoury, complex, herbaceous, and inviting.',
+    heatLevel: 'Medium (2.5/5)',
+    origin: 'Nadiad Heritage Blend',
+    bestFor: 'Paneer dishes, mixed vegetable curries, and dry stir-fries.'
+  },
+  {
+    id: 'gujarati-tea-masala',
+    name: 'Desi Tea Masala',
+    category: 'blended',
+    type: 'Blend',
+    image: '/spice_packaging.png',
+    tagline: 'Ginger-forward traditional Gujarati chai spice.',
+    description: 'Crafted specifically for the perfect cup of Gujarati masala chai. Features premium dried ginger (sonth), black pepper, green cardamom, cloves, and nutmeg, balanced to warm you up from within.',
+    aroma: 'Zesty, spicy, sweet, and comforting.',
+    heatLevel: 'Warm (1.5/5)',
+    origin: 'Charotar Region',
+    bestFor: 'Masala tea, milk coffee, or warm milk infusions.'
+  }
+];
