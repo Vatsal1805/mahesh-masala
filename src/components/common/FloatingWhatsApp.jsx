@@ -72,12 +72,11 @@ export default function FloatingWhatsApp() {
         </div>
       )}
 
-      {/* Pulsing Floating Button */}
+      {/* Professional Floating Button */}
       <a 
         href={getGeneralInquiryLink()}
         target="_blank"
         rel="noopener noreferrer"
-        className="animate-pulse-whatsapp"
         style={{
           width: '56px',
           height: '56px',
@@ -88,10 +87,18 @@ export default function FloatingWhatsApp() {
           justifyContent: 'center',
           color: '#ffffff',
           cursor: 'pointer',
-          transition: 'all 0.3s ease',
-          boxShadow: '0 4px 16px rgba(37, 211, 102, 0.3)'
+          transition: 'all 0.2s ease',
+          boxShadow: '0 4px 14px rgba(0, 0, 0, 0.4)'
         }}
-        onMouseEnter={() => setShowTooltip(true)}
+        onMouseEnter={(e) => {
+          setShowTooltip(true);
+          e.currentTarget.style.transform = 'translateY(-3px)';
+          e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.5)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'none';
+          e.currentTarget.style.boxShadow = '0 4px 14px rgba(0, 0, 0, 0.4)';
+        }}
       >
         {/* Customized WhatsApp styled speech bubble using inline svg or message icon */}
         <svg 

@@ -34,44 +34,33 @@ function HighlightCard({ product, setActiveTab }) {
         <div 
           style={{ 
             width: '100%', 
-            height: '220px', 
+            height: '240px', 
             borderRadius: '8px', 
             overflow: 'hidden', 
             marginBottom: '1.5rem',
-            backgroundColor: 'rgba(0,0,0,0.4)',
-            border: '1px solid rgba(255,255,255,0.03)'
+            backgroundColor: '#ffffff',
+            border: '1px solid rgba(207, 168, 100, 0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
           }}
         >
           <img 
             src={product.image} 
             alt={product.name} 
             style={{ 
-              width: '100%', 
-              height: '100%', 
-              objectFit: 'cover',
-              transition: 'var(--transition-smooth)'
+              maxWidth: '100%', 
+              maxHeight: '100%', 
+              objectFit: 'contain',
+              transition: 'var(--transition-smooth)',
+              padding: '0.5rem'
             }}
             onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
             onMouseLeave={(e) => e.currentTarget.style.transform = 'none'}
           />
         </div>
 
-        {/* Category & Origin */}
-        <div 
-          style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center',
-            marginBottom: '1.25rem',
-            fontSize: '0.75rem',
-            letterSpacing: '0.1em',
-            color: 'var(--text-muted)',
-            textTransform: 'uppercase'
-          }}
-        >
-          <span>{product.origin}</span>
-          <span>{product.type}</span>
-        </div>
+
 
         {/* Name */}
         <h3 
@@ -223,7 +212,7 @@ function HighlightCard({ product, setActiveTab }) {
 export default function ProductHighlights({ setActiveTab }) {
   // Grab a few key products to highlight
   const highlights = products.filter(p => 
-    p.id === 'kashmiri-chili' || p.id === 'sangli-turmeric' || p.id === 'shahi-garam-masala'
+    p.id === 'kashmiri-kumthi-powder' || p.id === 'selam-sangli-turmeric' || p.id === 'coriander-powder'
   );
 
   return (

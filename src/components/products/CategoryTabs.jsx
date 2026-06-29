@@ -2,9 +2,8 @@ import React from 'react';
 
 export default function CategoryTabs({ activeFilter, setActiveFilter }) {
   const tabs = [
-    { id: 'all', label: 'All Spices' },
-    { id: 'pure', label: 'Single-Origin Powders' },
-    { id: 'blended', label: 'Specialty Blends' }
+    { id: 'whole', label: 'Whole Spices' },
+    { id: 'powdered', label: 'Powdered Spices' }
   ];
 
   return (

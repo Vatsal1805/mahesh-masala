@@ -21,46 +21,33 @@ function CatalogCard({ product, getProductInquiryLink }) {
         <div 
           style={{ 
             width: '100%', 
-            height: '220px', 
+            height: '240px', 
             borderRadius: '8px', 
             overflow: 'hidden', 
             marginBottom: '1.5rem',
-            backgroundColor: 'rgba(0,0,0,0.4)',
-            border: '1px solid rgba(255,255,255,0.03)'
+            backgroundColor: '#ffffff',
+            border: '1px solid rgba(207, 168, 100, 0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
           }}
         >
           <img 
             src={product.image} 
             alt={product.name} 
             style={{ 
-              width: '100%', 
-              height: '100%', 
-              objectFit: 'cover',
-              transition: 'var(--transition-smooth)'
+              maxWidth: '100%', 
+              maxHeight: '100%', 
+              objectFit: 'contain',
+              transition: 'var(--transition-smooth)',
+              padding: '0.5rem'
             }}
             onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
             onMouseLeave={(e) => e.currentTarget.style.transform = 'none'}
           />
         </div>
 
-        {/* Header Origin Info */}
-        <div 
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            fontSize: '0.75rem',
-            color: 'var(--text-muted)',
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            marginBottom: '1.25rem',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.02)',
-            paddingBottom: '0.75rem'
-          }}
-        >
-          <span>{product.origin}</span>
-          <span>{product.type}</span>
-        </div>
+
 
         {/* Name */}
         <h3 

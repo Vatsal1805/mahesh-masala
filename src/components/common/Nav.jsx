@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useWhatsApp } from '../../hooks/useWhatsApp';
 import { Phone, MessageSquare, Menu, X } from 'lucide-react';
 
+import MMG from '../../assets/MMG_logo_bg_removed.png';
+
 export default function Nav({ activeTab, setActiveTab }) {
   const { getGeneralInquiryLink } = useWhatsApp();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,40 +51,17 @@ export default function Nav({ activeTab, setActiveTab }) {
             gap: '0.75rem'
           }}
         >
-          {/* Custom SVG Logo matching client image */}
-          <svg viewBox="0 0 100 100" width="40" height="40" style={{ flexShrink: 0 }}>
-            {/* Outer Circular Strokes (Brush Style) */}
-            <path d="M 50 8 A 42 42 0 1 1 12 68" fill="none" stroke="#18964d" strokeWidth="3" strokeLinecap="round" />
-            <path d="M 50 92 A 42 42 0 1 1 88 32" fill="none" stroke="#18964d" strokeWidth="3" strokeLinecap="round" />
-            
-            <path d="M 85 27 C 72 11 54 8 50 8" fill="none" stroke="#e5242a" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M 15 73 C 28 89 46 92 50 92" fill="none" stroke="#e5242a" strokeWidth="1.5" strokeLinecap="round" />
-
-            {/* MMG Text */}
-            <text 
-              x="16" 
-              y="58" 
-              fontFamily="var(--font-sans)" 
-              fontSize="20" 
-              fontWeight="bold" 
-              fill="#18964d" 
-              letterSpacing="-0.5"
-            >
-              MMG
-            </text>
-
-            {/* Red Chili U component */}
-            {/* The Green Stem of Chili */}
-            <path d="M 73 34 C 74 31, 76 29, 78 28" fill="none" stroke="#18964d" strokeWidth="2.5" strokeLinecap="round" />
-            
-            {/* Red Chili Body making a curved shape */}
-            <path 
-              d="M 73 34 C 75 36, 80 43, 80 49 C 80 57, 72 58, 70 51 C 69 47, 72 41, 73 34" 
-              fill="#e5242a" 
-              stroke="#e5242a"
-              strokeWidth="0.5"
-            />
-          </svg>
+          <img 
+            src={MMG} 
+            alt="Mahesh Masala Logo" 
+            style={{ 
+              width: '50px', 
+              height: '50px', 
+              objectFit: 'contain',
+              borderRadius: '4px',
+              flexShrink: 0 
+            }} 
+          />
           
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ 

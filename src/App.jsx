@@ -27,7 +27,7 @@ import BulkBanner from './components/products/BulkBanner';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('whole');
 
   return (
     <div 

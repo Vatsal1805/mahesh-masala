@@ -1,25 +1,37 @@
 import React from 'react';
-import { Award, ShieldCheck, Heart } from 'lucide-react';
+import { Award, ShieldCheck, Heart, FileText, Globe } from 'lucide-react';
 
 export default function Certifications() {
   const certifications = [
     {
       icon: <ShieldCheck size={28} />,
-      title: 'FSSAI Registered',
-      license: 'License Status: Active',
-      desc: 'Compliant with Indian Food Safety and Standards standards, ensuring hygienic processing and packing.'
+      title: 'FSSAI License',
+      license: 'Active Food Safety compliance',
+      desc: 'Fully compliant with Indian Food Safety and Standards Authority regulations, ensuring hygienic processing, testing, and packaging.'
     },
     {
       icon: <Award size={28} />,
-      title: 'Spices Board standards',
-      license: 'Pure Quality Grade',
-      desc: 'Formulated in compliance with voluntary parameters of moisture, volatile oil levels, and purity.'
+      title: 'Spices Board Registration',
+      license: 'Registered exporter & merchant',
+      desc: 'Certified by the Spices Board of India, adhering strictly to voluntary quality benchmarks, moisture controls, and volatile oil standards.'
+    },
+    {
+      icon: <FileText size={28} />,
+      title: 'GST & IEC Code',
+      license: 'Import-export clear certification',
+      desc: 'Officially registered with Indian Goods and Services Tax and issued an Import Export Code (IEC) by the DGFT for global operations.'
+    },
+    {
+      icon: <Globe size={28} />,
+      title: 'ADC & Customs Clearance',
+      license: 'International phytosanitary ready',
+      desc: 'Equipped with Assistant Drug Controller (ADC) clearance protocols and export documentation to shipping channels worldwide.'
     },
     {
       icon: <Heart size={28} />,
-      title: '100% Vegetarian',
-      license: 'Certified Cruelty-Free',
-      desc: 'Prepared in a strictly vegetarian spice-processing environment. Zero cross-contamination.'
+      title: '100% Vegetarian (MMG)',
+      license: 'Strictly plant-based processing',
+      desc: 'Processed in a 100% vegetarian-only environment. Guaranteed zero cross-contamination with non-veg products.'
     }
   ];
 
@@ -37,6 +49,9 @@ export default function Certifications() {
             REGULATORY STANDARDS
           </span>
           <h2>Quality Certifications & Trust</h2>
+          <p style={{ maxWidth: '600px', margin: '0.5rem auto 0 auto', fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+            Mahesh Masala Gruhudhyog possesses all required national and international licenses to process, distribute, and trade premium spices globally.
+          </p>
           <div className="divider"></div>
         </div>
 

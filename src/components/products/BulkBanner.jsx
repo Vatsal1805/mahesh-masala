@@ -65,20 +65,90 @@ export default function BulkBanner() {
               marginBottom: '1rem'
             }}
           >
-            Wholesale Procurement & Private Labeling
+            Wholesale Sourcing & Custom Packaging
           </h2>
           
           <p 
             style={{
-              fontSize: '1rem',
+              fontSize: '1.05rem',
               color: 'var(--text-secondary)',
               lineHeight: '1.7',
-              marginBottom: '2.5rem',
-              maxWidth: '650px'
+              marginBottom: '3rem',
+              maxWidth: '700px'
             }}
           >
-            We regularly partner with spice exporters, grocery chains, corporate gift vendors, and restaurant networks. We offer custom container bagging (10kg to 50kg bulk gunny bags) as well as retail private label packaging processed directly in our Nadiad facility.
+            Mahesh Masala Gruhudhyog partners with bulk buyers globally to deliver unadulterated spice quality. We support customized milling, sizing, and packaging tiers out of our Nadiad facility.
           </p>
+
+          {/* Supply & Packaging Details Grid */}
+          <div 
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '2rem',
+              width: '100%',
+              marginBottom: '3.5rem',
+              textAlign: 'left'
+            }}
+          >
+            {/* Box 1: Supply Sectors */}
+            <div 
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.01)',
+                border: '1px solid var(--border-gold)',
+                borderRadius: '8px',
+                padding: '2rem'
+              }}
+            >
+              <h3 style={{ fontFamily: 'var(--font-serif)', color: 'var(--accent-gold)', marginBottom: '1.25rem', fontSize: '1.3rem' }}>
+                Who We Supply
+              </h3>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: 0 }}>
+                {[
+                  { label: 'Exporters', desc: 'Direct supply for international container shipments.' },
+                  { label: 'Wholesalers & Distributors', desc: 'Consistent grade volumes for regional networks.' },
+                  { label: 'HoReCa Sector', desc: 'Premium custom packages for Hotels, Restaurants, and Cafés.' },
+                  { label: 'Retail & Modern Trade', desc: 'White labeling and consumer packs for grocery chains.' }
+                ].map((item, idx) => (
+                  <li key={idx} style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <strong style={{ color: 'var(--text-primary)' }}>• {item.label}</strong>: {item.desc}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Box 2: Packaging Types */}
+            <div 
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.01)',
+                border: '1px solid var(--border-gold)',
+                borderRadius: '8px',
+                padding: '2rem'
+              }}
+            >
+              <h3 style={{ fontFamily: 'var(--font-serif)', color: 'var(--accent-gold)', marginBottom: '1.25rem', fontSize: '1.3rem' }}>
+                Available Packaging
+              </h3>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem', padding: 0 }}>
+                <li>
+                  <div style={{ fontWeight: '600', color: 'var(--text-primary)', fontSize: '0.95rem', marginBottom: '0.25rem' }}>
+                    ✔ PPE Bags (Heavy Woven Bags)
+                  </div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', paddingLeft: '1.25rem' }}>
+                    Ideal for bulk export shipments and domestic wholesale orders (Available in 10kg to 50kg bulk sizes).
+                  </div>
+                </li>
+                <li>
+                  <div style={{ fontWeight: '600', color: 'var(--text-primary)', fontSize: '0.95rem', marginBottom: '0.25rem' }}>
+                    ✔ Pouch Packaging (Premium Sealed Pouches)
+                  </div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', paddingLeft: '1.25rem' }}>
+                    Perfect for domestic retail markets, private labels, and direct consumer distribution.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a 

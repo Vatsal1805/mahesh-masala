@@ -116,7 +116,7 @@ export default function HowToOrder({ setActiveTab }) {
           ))}
         </div>
 
-        {/* WhatsApp Call to Action */}
+        {/* Contact Banner instead of FAQ */}
         <div 
           style={{
             marginTop: '5rem',
@@ -124,24 +124,28 @@ export default function HowToOrder({ setActiveTab }) {
             backgroundColor: 'var(--bg-secondary)',
             border: '1px solid var(--border-gold)',
             borderRadius: '12px',
-            padding: '3rem 2rem',
+            padding: '3.5rem 2.5rem',
             maxWidth: '750px',
             margin: '5rem auto 0 auto',
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
           }}
         >
+          <span style={{ fontSize: '0.75rem', color: 'var(--accent-gold)', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
+            HAVE QUESTIONS?
+          </span>
           <h3 
             style={{
-              fontSize: '1.75rem',
+              fontSize: '2rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-serif)',
-              marginBottom: '1rem'
+              marginBottom: '1rem',
+              fontWeight: '400'
             }}
           >
-            Ready to order or request custom sample kits?
+            For Any Query Contact Us Directly
           </h3>
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem auto' }}>
-            Connect with our trade desk instantly. We can arrange sample spice kits for commercial kitchens and wholesalers.
+          <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', maxWidth: '550px', margin: '0 auto 2.5rem auto', lineHeight: '1.6' }}>
+            We value direct communications. For inquiries regarding custom pack sizes, exports, white-labeling, sample kits, or direct orders, get in touch with our team instantly.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a 
