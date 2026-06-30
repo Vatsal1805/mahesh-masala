@@ -116,7 +116,7 @@ export default function ProcessFlow() {
     },
     {
       icon: <Package size={20} />,
-      title: 'Nitrogen Sealing',
+      title: 'Airtight Moisture-Proof Sealing',
       desc: 'Packed in airtight, moisture-proof packets to lock in raw flavor and color.'
     }
   ];
