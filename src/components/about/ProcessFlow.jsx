@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Compass, Hammer, Sparkles, Package } from 'lucide-react';
+import { Compass, Filter, Sparkles, Package } from 'lucide-react';
 
 function TimelineItem({ step, idx, isLeft }) {
   const [isActive, setIsActive] = useState(false);
@@ -105,7 +105,7 @@ export default function ProcessFlow() {
       desc: 'Selected directly from verified farmers in Gujarat, Maharashtra, and Karnataka.'
     },
     {
-      icon: <Hammer size={20} />,
+      icon: <Filter size={20} />,
       title: 'Sorting & De-stemming',
       desc: 'Hand-sorted and vacuum-cleaned to remove dirt, pebbles, and stems.'
     },

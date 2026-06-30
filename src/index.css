@@ -382,8 +382,8 @@ p {
 /* Vertical guide line */
 .timeline-line {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 2.5rem;
+  bottom: 8rem;
   left: 50%;
   width: 2px;
   background: rgba(207, 168, 100, 0.1);
@@ -511,6 +511,8 @@ p {
   .timeline-line {
     left: 20px;
     transform: none;
+    top: 2.25rem;
+    bottom: 9.5rem;
   }
   
   .timeline-item, .timeline-item.left, .timeline-item.right {

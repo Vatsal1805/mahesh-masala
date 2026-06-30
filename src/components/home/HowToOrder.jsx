@@ -206,7 +206,7 @@ export default function HowToOrder({ setActiveTab }) {
               style={{ borderRadius: '4px' }}
             >
               <MessageSquare size={16} />
-              <span>Message on WhatsApp</span>
+              <span>WhatsApp Inquiry</span>
             </a>
             <a 
               href={`tel:${CONFIG.phonePrimary}`}

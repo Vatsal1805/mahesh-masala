@@ -7,7 +7,9 @@ export default function ProductsHero() {
       style={{
         position: 'relative',
         padding: 'clamp(5.5rem, 15vh, 8rem) 0 clamp(3rem, 8vh, 4rem) 0',
-        backgroundColor: 'var(--bg-secondary)',
+        backgroundImage: `linear-gradient(to bottom, rgba(19, 18, 16, 0.7), rgba(19, 18, 16, 0.95)), url('/products_hero_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         borderBottom: '1px solid var(--border-gold)',
         overflow: 'hidden'
       }}
