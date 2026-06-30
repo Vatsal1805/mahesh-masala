@@ -102,7 +102,7 @@ export default function ProcessFlow() {
     {
       icon: <Compass size={20} />,
       title: 'Farm Sourcing',
-      desc: 'Selected directly from verified farmers in Gujarat, Maharashtra, and Karnataka.'
+      desc: 'Selected directly from verified farmers across Gujarat, Maharashtra, Karnataka,  Andra Pradesh, Tamil Nadu & many other states'
     },
     {
       icon: <Filter size={20} />,
