@@ -44,6 +44,7 @@ export default function Nav({ activeTab, setActiveTab }) {
         {/* Logo */}
         <div 
           onClick={() => setActiveTab('home')}
+          className="nav-brand"
           style={{ 
             cursor: 'pointer',
             display: 'flex', 
@@ -54,9 +55,8 @@ export default function Nav({ activeTab, setActiveTab }) {
           <img 
             src={MMG} 
             alt="Mahesh Masala Logo" 
+            className="nav-logo"
             style={{ 
-              width: '50px', 
-              height: '50px', 
               objectFit: 'contain',
               borderRadius: '4px',
               flexShrink: 0 
@@ -64,25 +64,27 @@ export default function Nav({ activeTab, setActiveTab }) {
           />
           
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ 
-              fontFamily: 'var(--font-serif)', 
-              fontSize: '1.45rem', 
-              fontWeight: '600', 
-              letterSpacing: '0.04em',
-              color: 'var(--text-primary)',
-              textTransform: 'uppercase',
-              lineHeight: '1.2'
-            }}>
+            <span 
+              className="brand-title"
+              style={{ 
+                fontFamily: 'var(--font-serif)', 
+                fontWeight: '600', 
+                color: 'var(--text-primary)',
+                textTransform: 'uppercase',
+                lineHeight: '1.2'
+              }}
+            >
               MAHESH MASALA
             </span>
-            <span style={{ 
-              fontFamily: 'var(--font-sans)', 
-              fontSize: '0.62rem', 
-              letterSpacing: '0.22em',
-              color: 'var(--accent-gold)',
-              textTransform: 'uppercase',
-              marginTop: '1px'
-            }}>
+            <span 
+              className="brand-subtitle"
+              style={{ 
+                fontFamily: 'var(--font-sans)', 
+                color: 'var(--accent-gold)',
+                textTransform: 'uppercase',
+                marginTop: '1px'
+              }}
+            >
               Gruhudhyog · Since 1999
             </span>
           </div>
@@ -228,6 +230,54 @@ export default function Nav({ activeTab, setActiveTab }) {
         .mobile-only {
           display: block !important;
         }
+        
+        .nav-logo {
+          width: 50px;
+          height: 50px;
+          transition: all 0.3s ease;
+        }
+        .brand-title {
+          font-size: 1.45rem;
+          letter-spacing: 0.04em;
+          transition: all 0.3s ease;
+        }
+        .brand-subtitle {
+          font-size: 0.62rem;
+          letter-spacing: 0.22em;
+          transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 480px) {
+          .nav-logo {
+            width: 42px;
+            height: 42px;
+          }
+          .brand-title {
+            font-size: 1.25rem;
+          }
+          .brand-subtitle {
+            font-size: 0.56rem;
+            letter-spacing: 0.16em;
+          }
+        }
+        
+        @media (max-width: 360px) {
+          .nav-logo {
+            width: 36px;
+            height: 36px;
+          }
+          .brand-title {
+            font-size: 1.05rem;
+          }
+          .brand-subtitle {
+            font-size: 0.48rem;
+            letter-spacing: 0.1em;
+          }
+          .nav-brand {
+            gap: 0.5rem !important;
+          }
+        }
+        
         @media (min-width: 768px) {
           .desktop-flex {
             display: flex !important;

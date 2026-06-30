@@ -6,7 +6,7 @@ export default function AboutHero() {
     <section 
       style={{
         position: 'relative',
-        padding: '8rem 0 6rem 0',
+        padding: 'clamp(5.5rem, 15vh, 8rem) 0 clamp(3.5rem, 10vh, 6rem) 0',
         backgroundColor: 'var(--bg-secondary)',
         borderBottom: '1px solid var(--border-gold)',
         overflow: 'hidden'
@@ -49,10 +49,11 @@ export default function AboutHero() {
         <h1 
           style={{
             fontFamily: 'var(--font-serif)',
-            fontSize: '3.5rem',
+            fontSize: 'clamp(2rem, 8vw, 3.5rem)',
             color: 'var(--text-primary)',
             marginBottom: '1rem',
-            fontWeight: '400'
+            fontWeight: '400',
+            lineHeight: '1.2'
           }}
         >
           Heritage & Craftsmanship
@@ -60,7 +61,7 @@ export default function AboutHero() {
         
         <p 
           style={{
-            fontSize: '1.1rem',
+            fontSize: 'clamp(0.95rem, 3.5vw, 1.1rem)',
             color: 'var(--text-secondary)',
             maxWidth: '600px',
             margin: '0 auto',
