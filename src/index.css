@@ -367,3 +367,192 @@ p {
     gap: 1.5rem !important;
   }
 }
+
+/* ==========================================================================
+   SCROLL-GUIDED TIMELINE ANIMATION
+   ========================================================================== */
+
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 5rem auto 0 auto;
+  padding: 2rem 0;
+}
+
+/* Vertical guide line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(207, 168, 100, 0.1);
+  transform: translateX(-50%);
+}
+
+.timeline-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent-gold), var(--accent-gold));
+  transform-origin: top;
+  box-shadow: 0 0 10px rgba(207, 168, 100, 0.5);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Left / Right Alternating layout */
+.timeline-item.left {
+  flex-direction: row-reverse;
+}
+
+.timeline-item.right {
+  flex-direction: row;
+}
+
+/* Empty spacer to align cards opposite each other */
+.timeline-spacer {
+  width: 45%;
+}
+
+/* Card styling */
+.timeline-card {
+  width: 45%;
+  padding: 2.25rem;
+  background: rgba(25, 24, 21, 0.6);
+  border: 1px solid rgba(207, 168, 100, 0.15);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  box-shadow: var(--glass-glow);
+}
+
+.timeline-item.left .timeline-card {
+  transform: translateX(-40px);
+}
+
+.timeline-item.right .timeline-card {
+  transform: translateX(40px);
+}
+
+/* Active card state */
+.timeline-item.active .timeline-card {
+  opacity: 1;
+  transform: translateX(0);
+  border-color: rgba(207, 168, 100, 0.45);
+  background: rgba(25, 24, 21, 0.95);
+  box-shadow: 0 8px 32px rgba(207, 168, 100, 0.08);
+}
+
+/* Center node dot */
+.timeline-node {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 2px solid rgba(207, 168, 100, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  z-index: 10;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.timeline-node svg {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active node state */
+.timeline-item.active .timeline-node {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: var(--bg-secondary);
+  box-shadow: 0 0 20px rgba(207, 168, 100, 0.4);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.timeline-item.active .timeline-node svg {
+  transform: rotate(360deg);
+}
+
+/* Step tag inside card */
+.timeline-step-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Responsiveness: Mobile Layout */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+    transform: none;
+  }
+  
+  .timeline-item, .timeline-item.left, .timeline-item.right {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin-bottom: 4rem;
+  }
+  
+  .timeline-spacer {
+    display: none;
+  }
+  
+  .timeline-card {
+    width: 100%;
+    padding: 1.75rem;
+  }
+  
+  .timeline-item.left .timeline-card, .timeline-item.right .timeline-card {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  
+  .timeline-item.active .timeline-card {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .timeline-node {
+    left: 20px;
+    top: 2.25rem;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+  }
+  
+  .timeline-node svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-item.active .timeline-node {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}

@@ -68,7 +68,7 @@ export default function ProductsHero() {
             fontWeight: '300'
           }}
         >
-          Sourced from India's finest harvesting regions, cold-stone milled to lock in volatile oils. Available in retail packs and customized wholesale bags.
+          Sourced from India's finest harvesting regions, ground using authentic grinding to lock in their natural purity, aroma, and rich flavours.
         </p>
       </div>
     </section>

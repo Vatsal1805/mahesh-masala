@@ -29,7 +29,7 @@ export default function WhoWeAre() {
               From a Humble Nadiad Home to Kitchens Across India
             </h2>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.8', marginBottom: '1.5rem', fontWeight: '300' }}>
-              Mahesh Masala was born in <strong>{CONFIG.establishedYear}</strong> with a singular promise: to bring clean, unadulterated spices into everyday homes. Starting as a small scale, home-grown venture (Gruhudhyog) in Nadiad, Gujarat, we manually sorted and stone-ground spices in small batches to preserve their taste, color, and natural oils.
+              Mahesh Masala was born in <strong>{CONFIG.establishedYear}</strong> with a singular promise: to bring clean, unadulterated spices into everyday homes. Starting as a small scale, home-grown venture (Gruhudhyog) in Nadiad, Gujarat, we manually sorted and ground spices using authentic traditional methods in small batches to preserve their taste, color, and natural oils.
             </p>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.8', marginBottom: '1.5rem', fontWeight: '300' }}>
               Over the last two decades, our scale has grown, but our values remain anchored in that home kitchen. We work with farmers in the finest growing regions—securing cumin from local Gujarat markets, chili from Guntur, and turmeric from Sangli—bringing the purest ingredients to our modern processing facility in Nadiad.
@@ -80,8 +80,8 @@ export default function WhoWeAre() {
               </h3>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 {[
-                  { title: 'Zero Adulteration', text: 'No starch, papaya seed powder, or rice husk fillers.' },
-                  { title: 'Cold Process Grinding', text: 'Stone-milling prevents heat friction, keeping essential oils intact.' },
+                  { title: 'Zero Adulteration', text: 'No starch, papaya seed powder, or rice husk fillers. Free from Sudan dye and aflatoxin.' },
+                  { title: 'Authentic Grinding', text: 'Authentic grinding preserves the natural oils, richness, and aroma without heating.' },
                   { title: 'Double Polished Seeds', text: 'Only uniform, healthy grains are fed into our pulverizers.' }
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>

@@ -83,7 +83,7 @@ export default function Hero({ setActiveTab }) {
             fontWeight: '300'
           }}
         >
-          A legacy of stone-ground flavor from Nadiad, Gujarat. Sourced directly from India's most fertile spice fields, sorted with care, and packed pure.
+          A legacy of authentic ground spice flavours from Nadiad, Gujarat. Built on decades of customer trust, we deliver pure, aromatic spices sourced directly from India's most fertile fields.
         </p>
 
         <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>

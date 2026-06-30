@@ -10,8 +10,8 @@ export default function WhyUs() {
     },
     {
       icon: <ShieldCheck size={28} />,
-      title: 'Hygienic Stone-Grinding',
-      desc: 'Slow milled at low temperatures. Traditional stone grinding preserves natural essential oils and aroma compared to high-heat commercial mills.'
+      title: 'Hygienic Authentic Grinding',
+      desc: 'Traditional authentic grinding preserves natural essential oils and aroma compared to high-heat commercial mills.'
     },
     {
       icon: <Landmark size={28} />,

@@ -70,7 +70,7 @@ export default function Footer({ setActiveTab }) {
               </div>
             </div>
             <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: '1.7', maxWidth: '320px' }}>
-              Handcrafting pure, traditional spices and signature culinary blends in Nadiad, Gujarat. Dedicated to preserving authentic Indian taste and culinary traditions.
+              Handcrafting pure, traditional spices and signature culinary blends in Nadiad, Gujarat. Fully licensed and authorized to trade and deal in premium spices nationally and internationally.
             </p>
             <div style={{ 
               fontFamily: 'var(--font-serif)', 
@@ -154,7 +154,7 @@ export default function Footer({ setActiveTab }) {
                   </a>
                   <a 
                     href={`tel:${CONFIG.phoneSecondary}`} 
-                    style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none' }}
+                    style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textDecoration: 'none' }}
                   >
                     {CONFIG.formattedPhoneSecondary}
                   </a>
@@ -162,12 +162,20 @@ export default function Footer({ setActiveTab }) {
               </li>
               <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                 <Mail size={16} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
-                <a 
-                  href={`mailto:${CONFIG.email}`} 
-                  style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textDecoration: 'none' }}
-                >
-                  {CONFIG.email}
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <a 
+                    href={`mailto:${CONFIG.email}`} 
+                    style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textDecoration: 'none' }}
+                  >
+                    {CONFIG.email}
+                  </a>
+                  <a 
+                    href={`mailto:${CONFIG.emailExport}`} 
+                    style={{ fontSize: '0.85rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '500' }}
+                  >
+                    Export: {CONFIG.emailExport}
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

@@ -150,7 +150,7 @@ export default function BulkBanner() {
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
             <a 
               href={getGeneralInquiryLink()}
               target="_blank"
@@ -163,13 +163,17 @@ export default function BulkBanner() {
             </a>
             
             <a 
-              href={`tel:${CONFIG.phonePrimary}`}
+              href={`tel:${CONFIG.phoneSecondary}`}
               className="btn-gold"
               style={{ borderRadius: '4px' }}
             >
               <Phone size={14} />
-              <span>Call Direct: {CONFIG.formattedPhonePrimary}</span>
+              <span>Call Us</span>
             </a>
+          </div>
+
+          <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+            Email Export Desk: <a href={`mailto:${CONFIG.emailExport}`} style={{ color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '500', borderBottom: '1px dashed rgba(207, 168, 100, 0.4)' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--accent-gold)'}>{CONFIG.emailExport}</a>
           </div>
         </div>
       </div>

@@ -74,39 +74,6 @@ function HighlightCard({ product, setActiveTab }) {
           {product.name}
         </h3>
 
-        {/* Heat & Curcumin Level Badges */}
-        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-          {product.heatLevel !== 'None' && (
-            <span style={{ 
-              fontSize: '0.7rem', 
-              backgroundColor: 'rgba(158, 42, 43, 0.15)', 
-              color: '#d66869',
-              border: '1px solid rgba(158, 42, 43, 0.25)',
-              padding: '0.2rem 0.6rem',
-              borderRadius: '10px',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.25rem'
-            }}>
-              <Flame size={10} />
-              {product.heatLevel}
-            </span>
-          )}
-          <span style={{ 
-            fontSize: '0.7rem', 
-            backgroundColor: 'rgba(207, 168, 100, 0.08)', 
-            color: 'var(--accent-gold)',
-            border: '1px solid rgba(207, 168, 100, 0.15)',
-            padding: '0.2rem 0.6rem',
-            borderRadius: '10px',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.25rem'
-          }}>
-            <Sparkles size={10} />
-            Pure Grade A
-          </span>
-        </div>
 
         {/* Description */}
         <p style={{ fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '1.5rem', color: 'var(--text-secondary)' }}>
@@ -212,7 +179,7 @@ function HighlightCard({ product, setActiveTab }) {
 export default function ProductHighlights({ setActiveTab }) {
   // Grab a few key products to highlight
   const highlights = products.filter(p => 
-    p.id === 'kashmiri-kumthi-powder' || p.id === 'selam-sangli-turmeric' || p.id === 'coriander-powder'
+    p.id === 'teja-chillies' || p.id === 'selam-sangli-turmeric' || p.id === 'coriander-powder'
   );
 
   return (

@@ -111,6 +111,32 @@ export default function Certifications() {
             </div>
           ))}
         </div>
+
+        {/* Licensing Affirmation Banner */}
+        <div 
+          style={{
+            marginTop: '4rem',
+            padding: '2.5rem',
+            backgroundColor: 'rgba(207, 168, 100, 0.02)',
+            border: '1px solid var(--accent-gold)',
+            borderRadius: '8px',
+            textAlign: 'center',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)'
+          }}
+        >
+          <p 
+            style={{ 
+              fontSize: '1.15rem', 
+              color: 'var(--text-primary)', 
+              lineHeight: '1.7',
+              margin: 0,
+              fontFamily: 'var(--font-serif)',
+              fontWeight: '500'
+            }}
+          >
+            We confirm that <span style={{ color: 'var(--accent-gold)' }}>Mahesh Masala Gruhudhyog</span> holds all required licenses, clearances, and board certifications to deal in the spices business both nationally and internationally.
+          </p>
+        </div>
       </div>
     </section>
   );
